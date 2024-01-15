@@ -10,7 +10,7 @@ builder.Services.AddRazorPages();
 builder.Services.AddControllers();
 builder.Services.AddDbContext<SchoolContext>(opt =>
 {
-    opt.UseSqlServer("Server=DESKTOP-QKI9SFB\\SQLEXPRESS01;Database=SchoolDB;Trusted_Connection=True;TrustServerCertificate=True;");
+    opt.UseSqlServer("Server=DESKTOP-QKI9SFB;Database=SchoolDB;Trusted_Connection=True;TrustServerCertificate=True;");
 });
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
